@@ -59,18 +59,6 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
     </td>
-    <!-- MLOps / 인프라 -->
-    <td align="center" width="230" style="vertical-align: top;">
-      <b>김금</b>
-      <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>MLOps / 인프라</b></sub><br>
-      <sub>Colab 실행 환경 및 의존성 관리,<br>
-      데이터 전처리 보조<br>
-      모델/아티팩트 저장 구조 설계</sub><br><br>
-      <a href="https://github.com/rlakeum93">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </a>
-    </td>
     <!-- ML / 분석 & 시각화 -->
     <td align="center" width="230" style="vertical-align: top;">
       <b>이혜지</b>
