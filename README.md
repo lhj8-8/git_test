@@ -22,15 +22,12 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 >[목차로 돌아가기](#-목차)
 
 **Diet Agent**는  
-사용자의 신체 정보, 목표 체중, 목표 기간, 일상 기록을 기반으로  
+사용자의 신체 정보, 목표 체중, 목표 기간, 일상 기록 등을 기반으로  
 👉 **식단 · 운동 · 일정 · 진행률 · AI 챗봇 상담을 통합 제공하는 다이어트 관리 웹 서비스**입니다.
 
-단순한 추천을 넘어,  
-- 실제 체중 변화
-- 목표 달성률  
-을 **DB에 기록하고 시각적으로 관리**하는 것이 핵심 목표입니다.
+단순한 추천을 넘어 실제 체중 변화, 목표 달성률을 **DB에 기록하고 시각적으로 관리**하는 것이 핵심 목표입니다.
 
-> 💡 “다이어트를 기록하고, 분석하고, 함께 관리해주는 AI 에이전트”
+
 
 ## 👤 팀원 소개
 >[목차로 돌아가기](#-목차)
@@ -38,31 +35,43 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 
 <table>
   <tr>
-    <!-- PM / 데이터 기획 -->
+    <!-- PM / Developer -->
     <td align="center" width="230" style="vertical-align: top;">
       <b>김요원 (PM)</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>PM / 데이터 기획</b></sub><br>
-      <sub>프로젝트 전체 일정·업무 관리,<br>요구사항 정의 및 화면 설계,및 데이터 전처리 총괄<br>발표 자료 및 문서화 총괄</sub><br><br>
+      <sub><b>PM / Developer</b></sub><br>
+      <sub>- 프로젝트 와이어프레임 설계 및 화면 흐름 기획,
+        <br>- DB 테이블·컬럼 구현
+        <br>- JWT 기반 인증 기능 구현 (React–Flask)
+        <br>- 사용자 정보 관리 및 식단 기록 및 저장 기능 구현
+        <br>- AI 챗봇 응답 로직 수정 및 기능 구현
+        <br>- 대시보드 주간 추세 시각화
+      </sub><br><br>
       <a href="https://github.com/kywww">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
     </td>
- <!-- PM / 데이터 기획 -->
+ <!-- Developer -->
     <td align="center" width="230" style="vertical-align: top;">
       <b>정두균</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>PM / 데이터 기획</b></sub><br>
-      <sub>프로젝트 전체 일정·업무 관리,<br>요구사항 정의 및 화면 설계,및 데이터 전처리 총괄<br>발표 자료 및 문서화 총괄</sub><br><br>
+      <sub><b>Developer</b></sub><br>
+      <sub>프로젝트 전체 일정·업무 관리
+        <br>- DB 테이블·컬럼 구현
+        <br>- JWT 기반 인증 기능 구현 (React–Flask)
+        <br>- 사용자 정보 관리 및 식단 기록 및 저장 기능 구현
+        <br>- AI 챗봇 응답 로직 수정 및 기능 구현
+        <br>- 대시보드 주간 추세 시각화
+      </sub><br><br>
       <a href="https://github.com/dooposip">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
     </td>
-    <!-- ML / 분석 & 시각화 -->
+    <!-- Developer -->
     <td align="center" width="230" style="vertical-align: top;">
       <b>이혜지</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>ML / 분석 & 시각화</b></sub><br>
+      <sub><b>Developer</b></sub><br>
       <sub>피처 엔지니어링(preprocess) 고안,<br>
       모델 성능 분석 및 리더보드 해석,<br>
       환경과 판매품 상관 분석 그래프 구현</sub><br><br>
@@ -70,11 +79,11 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
     </td>
-    <!-- Full Stack / Streamlit -->
+    <!-- Developer -->
     <td align="center" width="230" style="vertical-align: top;">
       <b>박종훈</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>Full Stack / Streamlit</b></sub><br>
+      <sub><b>Developer</b></sub><br>
       <sub>메인 대시보드 개발,<br>
       예측·발주 로직 및 세그먼트 구현,<br>
       ngrok 연동 및 UI/UX 개선</sub><br><br>
