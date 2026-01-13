@@ -26,9 +26,9 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 
 **Diet Agent**는  
 사용자의 신체 정보, 목표 체중, 목표 기간, 일상 기록 등을 기반으로  
-👉 **식단 · 운동 · 일정 · 진행률 · AI 챗봇 상담을 통합 제공하는 다이어트 관리 웹 서비스**입니다.
+👉 **식단 · 운동 · 일정 · 진행률 · AI 챗봇 상담 등을 통합 제공하는 다이어트 관리 웹 서비스**입니다.
 
-단순한 추천을 넘어 실제 체중 변화, 목표 달성률을 **DB에 기록하고 시각적으로 관리**하는 것이 핵심 목표입니다.
+단순한 추천을 넘어 실제 데이터들을 **DB에 기록하고 시각적으로 관리**하는 것이 핵심 목표입니다.
 
 
 
@@ -43,11 +43,11 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
       <b>김요원 (PM)</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
       <sub><b>PM / Developer</b></sub><br>
-      <sub>- 프로젝트 와이어프레임 설계 및 화면 흐름 기획,
-        <br>- DB 테이블·컬럼 구현
+      <sub>- 프로젝트 와이어프레임 설계 및 <br>화면 흐름 기획,
+        <br>- DB 테이블·컬럼 공동 구현
         <br>- JWT 기반 인증 기능 구현 (React–Flask)
-        <br>- 사용자 정보 관리 및 식단 기록 및 저장 기능 구현
-        <br>- AI 챗봇 응답 로직 수정 및 기능 구현
+        <br>- 사용자 정보 관리 및 식단 기록 및 <br>저장 기능 구현
+        <br>- AI 챗봇 응답 로직 수정, 기능 공동 구현
         <br>- 대시보드 주간 추세 시각화
       </sub><br><br>
       <a href="https://github.com/kywww">
@@ -59,12 +59,13 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
       <b>정두균</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
       <sub><b>Developer</b></sub><br>
-      <sub>프로젝트 전체 일정·업무 관리
-        <br>- DB 테이블·컬럼 구현
-        <br>- JWT 기반 인증 기능 구현 (React–Flask)
-        <br>- 사용자 정보 관리 및 식단 기록 및 저장 기능 구현
-        <br>- AI 챗봇 응답 로직 수정 및 기능 구현
-        <br>- 대시보드 주간 추세 시각화
+      <sub>- 프론트엔드 전반 UI/UX 설계 및 구현
+        <br>- React 기반 카드형 콘텐츠, 캘린더, 
+        <br>모달 중심의 인터페이스 구현 
+        <br>- 디자인, 컴포넌트 구조 설계
+        <br>- 사용자 친화적 화면플로우 및 UX 구성
+        <br>- DB 테이블, 컬럼 공동 구현
+        <br>- AI 챗봇 응답 로직 수정 및 <br>기능 공동 구현
       </sub><br><br>
       <a href="https://github.com/dooposip">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
@@ -75,9 +76,14 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
       <b>이혜지</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
       <sub><b>Developer</b></sub><br>
-      <sub>피처 엔지니어링(preprocess) 고안,<br>
-      모델 성능 분석 및 리더보드 해석,<br>
-      환경과 판매품 상관 분석 그래프 구현</sub><br><br>
+      <sub>- 백엔드(Flask) 전체 디렉토리
+        <br>구조 설계 및 파일 구현
+        <br>- DB 관리 파일(schema_extra.sql, <br>database.py) 구현
+        <br>- 시드데이터 csv 파일 생성
+        <br>- React로 대시보드 초안 구현
+        <br>- 오늘의 코칭 프로그래밍
+        <br>- 문서작업 및 README 작성
+      </sub><br><br>
       <a href="https://github.com/lhj8-8">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
@@ -87,9 +93,12 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
       <b>박종훈</b>
       <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
       <sub><b>Developer</b></sub><br>
-      <sub>메인 대시보드 개발,<br>
-      예측·발주 로직 및 세그먼트 구현,<br>
-      ngrok 연동 및 UI/UX 개선</sub><br><br>
+      <sub>- 커뮤니티 개발 값 정규화, 
+        <br>금지어, 이상 입력 차단
+        <br>추천 시간 필터 보조
+        <br>- 몇 파일에 뭉쳐있던 것들을 <br>fiexd 기능별 분리
+        <br>- DB성능/ 초기데이터 추가
+      </sub><br><br>
       <a href="https://github.com/dailyhune">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
       </a>
@@ -107,11 +116,11 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 ## 🎯 핵심 목표
 >[목차로 돌아가기](#-목차)
 
-- 실제 서비스 수준의 **React + Flask 풀스택 구현**
-- **JWT 인증 구조 직접 설계**
-- DB 중심의 사용자 상태 관리
-- 챗봇, 일정, 진행률을 하나의 흐름으로 연결
-- Docker 기반 배포 환경 구축
+- 서비스 수준의 **React + Flask 풀스택 구현**
+- **JWT 인증 구조 설계**
+- **DB 중심**의 사용자 상태 관리
+- 사용자의 정보와 **챗봇**, 일정을 연결한 코칭
+- **Docker** 기반 배포 환경 구축
 
 ---
 
@@ -122,7 +131,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 - **React (Vite)**
 - React Router DOM
 - Axios
-- CSS (컴포넌트 단위 스타일링)
+- CSS 기반 컴포넌트 스타일링
 
 ### Backend
 - **Python Flask**
