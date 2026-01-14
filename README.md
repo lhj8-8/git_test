@@ -225,55 +225,55 @@ backend/                               # Flask 기반 백엔드 서버
 ├── data/                              # csv data
 │
 ├── db/
-│   ├── agent.db                       # SQLite 데이터베이스 파일
-│   ├── database.py                    # SQLite 연결 및 RowFactory 설정
-│   └── schema_extra.sql               # SQLite 연결 및 RowFactory 설정
+│   ├── agent.db                       # 데이터베이스 파일
+│   ├── database.py                    # SQL 연결 및 RowFactory 설정
+│   └── schema_extra.sql               # 추가 테이블/컬럼 정의용 SQL 스키마
 │
-├── models/                            # DB 접근 로직(Model 계층)
-│   ├── activity_model.py              # users 테이블 CRUD
-│   ├── calorie_model.py               # users 테이블 CRUD
+├── models/                            # DB 접근 로직
+│   ├── activity_model.py              # 사용자 활동 기록 모델
+│   ├── calorie_model.py               # 칼로리 계산 및 저장 모델
 │   ├── chatbot_model.py               # 챗봇 대화 로그 저장
-│   ├── diet_model.py                  # 체중, 목표, 진행률 데이터 처리
+│   ├── diet_model.py                  # 식단 기록 및 목표 체중 관련 DB 로직
 │   ├── food_model.py                  # 음식 선호 정보 저장/조회
-│   ├── memo_model.py                  # 음식 선호 정보 저장/조회
-│   ├── recommendation_model.py        # 음식 선호 정보 저장/조회
+│   ├── memo_model.py                  # 메모 저장 모델
+│   ├── recommendation_model.py        # 추천 결과 저장 및 조회
 │   ├── schedule_model.py              # 일정 데이터 DB 처리
-│   ├── settings_model.py              # 일정 데이터 DB 처리
-│   ├── summary_model.py               # 일정 데이터 DB 처리
-│   ├── user_model.py                  # users 테이블 CRUD
+│   ├── settings_model.py              # 사용자 설정 모델(테마 변경)
+│   ├── summary_model.py               # 대시보드 요약 데이터 집계
+│   ├── user_model.py                  # 사용자 계정, 프로필 처리
 │   └── workout_model.py               # 운동 기록 DB 처리
 │
-├── routes/                            # API 라우트(Controller 계층)
-│   ├── activity_routes.py             # 회원가입, 로그인, JWT 발급
-│   ├── ai_engine.py                   # 회원가입, 로그인, JWT 발급
-│   ├── ai_tools.py                    # 회원가입, 로그인, JWT 발급
-│   ├── auth_routes.py                 # 회원가입, 로그인, JWT 발급
-│   ├── calendar_routes.py             # 회원가입, 로그인, JWT 발급
-│   ├── calorie_routes.py              # AI 챗봇 대화 API
+├── routes/                            # API 라우트(요청/응답)
+│   ├── activity_routes.py             # 운동 기록 API
+│   ├── ai_engine.py                   # AI 응답 생성 로직
+│   ├── ai_tools.py                    # AI 프롬프트 보조
+│   ├── auth_routes.py                 # 관리자 계정 jwt
+│   ├── calendar_routes.py             # 캘린더 조회 전용 API
+│   ├── calorie_routes.py              # 칼로리 계산 및 기록 API
 │   ├── chatbot_routes.py              # AI 챗봇 대화 API
 │   ├── community_routes.py            # 공지사항, 문의, 관리자 문의 답변 API
-│   ├── diet_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
-│   ├── memo_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
-│   ├── plan_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
-│   ├── preference_routes.py           # 음식 선호(likes/dislikes/allergies) API
-│   ├── recommendation_routes.py       # 내 정보 조회(/user/me) 등 사용자 관련 API
-│   ├── schedule_routes.py             # 일정 CRUD 및 캘린더 연동 API
-│   ├── user_routes.py                 # 내 정보 조회(/user/me) 등 사용자 관련 API
-│   ├── weeklytrend_routes.py          # 내 정보 조회(/user/me) 등 사용자 관련 API
+│   ├── diet_routes.py                 # 식단 기록, 체중 목표, 진행률 계산 API
+│   ├── memo_routes.py                 # 메모 저장 및 조회 API
+│   ├── plan_routes.py                 # 목표, 계획 생성 API
+│   ├── preference_routes.py           # 음식 선호도 저장, 조회 API
+│   ├── recommendation_routes.py       # AI 추천 결과 반환 API
+│   ├── schedule_routes.py             # 일정 CRUD(생성, 조회, 수정, 삭제 동작) API
+│   ├── user_routes.py                 # 내 정보 조회, 수 등 사용자 관련 API
+│   ├── weeklytrend_routes.py          # 주간 체중/활동 트렌드 API
 │   └── workout_routes.py              # 운동 기록 저장 및 조회 API
 │
-├── services/                          # 비즈니스 로직 계층
-│   ├── calorie_service.py             # 일일 섭취/소모 칼로리 계산
-│   ├── planning_service.py            # 일정 기반 자동 추천 로직
-│   ├── progress_service.py            # 일정 기반 자동 추천 로직
-│   ├── recommendation_service.py      # 일정 기반 자동 추천 로직
-│   ├── schedule_service.py            # 일정 기반 자동 추천 로직
-│   └── workout_service.py             # 챗봇 프롬프트 및 응답 처리
+├── services/                          # 계산/추천/계획 로직
+│   ├── calorie_service.py             # 칼로리 계산 비즈니스 로직
+│   ├── planning_service.py            # 목표 기반 일정/계획 생성 로직
+│   ├── progress_service.py            # 체중/기간 목표 진행률 계산 로직
+│   ├── recommendation_service.py      # AI 추천 데이터 가공 서비스
+│   ├── schedule_service.py            # 일정 비즈니스 로직
+│   └── workout_service.py             # 운동 추천 및 처리 로직
 │
-├── utils/                             # 입력값 검증, 타입 변환, 예외 방어 처리              
+├── utils/                             # 필터링 유틸              
 │      
-├── app.py                             # Flask 앱 엔트리 포인트, Blueprint 등록 및 서버 실행
-└── config.py                          # HTML 엔트리 파일
+├── app.py                             # Flask 애플리케이션 엔트리 포인트, 라우트 및 확장 초기화
+└── config.py                          # JWT, DB, 환경변수 등 전체 서버 설정 관리
 
 ```
 
@@ -282,13 +282,13 @@ backend/                               # Flask 기반 백엔드 서버
 ## 🔄 서비스 흐름
 >[목차로 돌아가기](#-목차)
 
-1. 회원가입 / 로그인
-2. JWT 발급 및 인증 유지
-3. 사용자 목표 정보 입력
-4. 체중 기록 시작
-5. 진행률 자동 계산
-6. 챗봇 상담 & 일정 관리
-7. 모든 기록 DB 저장
+1. 회원가입 및 로그인을 통해 인증을 진행함
+2. 로그인 성공 시 JWT 토큰이 발급됨
+3. 토큰은 LocalStorage에 저장되며, 앱 재실행 시 인증 상태를 복구함
+4. 사용자는 목표 체중, 현재 체중, 목표 기간을 입력함
+5. 체중 기록이 누적되며, 진행률이 자동 계산됨
+6. 챗봇은 입력된 사용자 정보를 기반으로 맞춤형 답변을 제공
+7. 이러한 이용 기록들은 DB에 저장됨
 
 ---
 
