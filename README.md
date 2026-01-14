@@ -162,60 +162,60 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 
 ### Frontend
 ```
-frontend/                                 # React + Vite 프론트엔드
+frontend/                                   # React + Vite 프론트엔드
 ├── src/
 │   ├── api/
-│   │   └── Axios.jsx                     # Axios 공통 설정, Bearer Token 자동 첨부
+│   │   └── Axios.jsx                       # Axios 공통 설정, Bearer Token 자동 첨부
 │   │
-│   ├── components/                       # 재사용 UI 컴포넌트
-│   │   ├── cards
-│   │   │   ├── GoalStatusCard.jsx        # 목표카드 UI
-│   │   │   ├── RecommendationCard.jsx    # 추천카드 UI
-│   │   │   ├── TodayDietTable.jsx        # 식단카드 UI
-│   │   │   ├── TodayScheduleCard.jsx     # 스케줄카드 UI
-│   │   │   └── UserInfoCard.jsx          # 내정보카드 UI
+│   ├── components/                         # 재사용 UI 컴포넌트
+│   │   ├── cards/
+│   │   │   ├── GoalStatusCard.jsx          # 목표카드 UI
+│   │   │   ├── RecommendationCard.jsx      # 추천카드 UI
+│   │   │   ├── TodayDietTable.jsx          # 식단카드 UI
+│   │   │   ├── TodayScheduleCard.jsx       # 스케줄카드 UI
+│   │   │   └── UserInfoCard.jsx            # 내정보카드 UI
 │   │   │
-│   │   ├── chat                          # 챗봇 답변 상세 설정
-│   │   ├── news                          # 뉴스박스 UI
-│   │   ├── BottomRightFab.jsx            # 우측 하단 버튼 UI
-│   │   ├── Chatbot.jsx                   # 챗봇 페이지
-│   │   ├── FloatingActionBar.jsx         # 우측 플로팅 버튼
-│   │   ├── Header.jsx                    # 상단 헤더
-│   │   ├── MemoPanel.jsx                 # 메모 UI
-│   │   ├── WeeklyTrendCard.jsx           # 주간 체중 변화율 UI
-│   │   └── WorkoutRecommend.jsx          # 운동 추천 UI
+│   │   ├── chat                            # 챗봇 답변 상세 설정
+│   │   ├── news                            # 뉴스박스 UI
+│   │   ├── BottomRightFab.jsx              # 우측 하단 버튼 UI
+│   │   ├── Chatbot.jsx                     # 챗봇 페이지
+│   │   ├── FloatingActionBar.jsx           # 우측 플로팅 버튼
+│   │   ├── Header.jsx                      # 상단 헤더
+│   │   ├── MemoPanel.jsx                   # 메모 UI
+│   │   ├── WeeklyTrendCard.jsx             # 주간 체중 변화율 UI
+│   │   └── WorkoutRecommend.jsx            # 운동 추천 UI
 │   │
-│   ├── data                              # 추천 운동 data
+│   ├── data                                # 추천 운동 data
+│   │  
+│   ├── hooks                               # 챗봇, 프로필, 일정 등의 상태 및 로직 분리
 │   │
-│   ├── hooks                             # 챗봇, 프로필, 일정 등의 상태 및 로직 분리
+│   ├── pages/                              # 페이지 단위 컴포넌트
+│   │   ├── ChatPage.jsx                    # 챗봇 페이지
+│   │   ├── CommunityPage.jsx               # 공지사항 / 문의
+│   │   ├── DietPage.jsx                    # 다이어트 관리 메인 페이지
+│   │   ├── DietTabPage.jsx                 # 다이어트 식단 관리 서브 페이지
+│   │   ├── GuestChatPage.jsx               # 비회원 챗봇 체험 페이지
+│   │   ├── HomePage.jsx                    # 홈 화면(뉴스카드) 페이지
+│   │   ├── IntroPage.jsx                   # 인트로 화면 페이지
+│   │   ├── LoginPage.jsx                   # 로그인 페이지
+│   │   ├── MainPage.jsx                    # 메인 대시보드
+│   │   ├── MyInfoPage.jsx                  # 내 정보 페이지
+│   │   ├── Programs.jsx                    # 프로그램 소개 페이지
+│   │   ├── SchedulePage.jsx                # 일정 관리 페이지
+│   │   ├── SelfCheckPage.jsx               # 자가진단 페이지
+│   │   ├── SettingsPage.jsx                # 설정 페이지(다크모드 변경)
+│   │   ├── Sidebar.jsx                     # 좌측 사이드바 네비게이션
+│   │   ├── SignupPage.jsx                  # 회원가입 페이지
+│   │   └── WorkoutPage.jsx                 # 다이어트 운동 관리 서브 페이지
 │   │
-│   ├── pages/                            # 페이지 단위 컴포넌트
-│   │   ├── ChatPage.jsx                  # 챗봇 페이지
-│   │   ├── CommunityPage.jsx             # 공지사항 / 문의
-│   │   ├── DietPage.jsx                  # 다이어트 관리 메인 페이지
-│   │   ├── DietTabPage.jsx               # 다이어트 식단 관리 서브 페이지
-│   │   ├── GuestChatPage.jsx             # 비회원 챗봇 체험 페이지
-│   │   ├── HomePage.jsx                  # 홈 화면(뉴스카드) 페이지
-│   │   ├── IntroPage.jsx                 # 인트로 화면 페이지
-│   │   ├── LoginPage.jsx                 # 로그인 페이지
-│   │   ├── MainPage.jsx                  # 메인 대시보드
-│   │   ├── MyInfoPage.jsx                # 내 정보 페이지
-│   │   ├── Programs.jsx                  # 프로그램 소개 페이지
-│   │   ├── SchedulePage.jsx              # 일정 관리 페이지
-│   │   ├── SelfCheckPage.jsx             # 자가진단 페이지
-│   │   ├── SettingsPage.jsx              # 설정 페이지(다크모드 변경)
-│   │   ├── Sidebar.jsx                   # 좌측 사이드바 네비게이션
-│   │   ├── SignupPage.jsx                # 회원가입 페이지
-│   │   └── WorkoutPage.jsx               # 다이어트 운동 관리 서브 페이지
+│   ├── styles                              # 대시보드css
 │   │
-│   ├── styles                            # 대시보드css
-│   │
-│   ├── utils                             # 카드뉴스 정보
+│   ├── utils                               # 카드뉴스 정보
 │   │ 
-│   ├── App.jsx                           # 라우팅, 인증 흐름, 로그인 상태 관리
-│   └── main.jsx                          # React 진입점
+│   ├── App.jsx                             # 라우팅, 인증 흐름, 로그인 상태 관리
+│   └── main.jsx                            # React 진입점
 │
-└── index.html                            # HTML 엔트리 파일
+└── index.html                              # HTML 엔트리 파일
 ```
 
 ---
@@ -223,38 +223,59 @@ frontend/                                 # React + Vite 프론트엔드
 ### Backend
 
 ```
-backend/                         # Flask 기반 백엔드 서버
-├── app.py                       # Flask 앱 엔트리 포인트, Blueprint 등록 및 서버 실행
+backend/                               # Flask 기반 백엔드 서버
+├── data/                              # csv data
+│
 ├── db/
-│   ├── agent.db                 # SQLite 데이터베이스 파일
-│   └── database.py              # SQLite 연결 및 RowFactory 설정
+│   ├── agent.db                       # SQLite 데이터베이스 파일
+│   ├── database.py                    # SQLite 연결 및 RowFactory 설정
+│   └── schema_extra.sql               # SQLite 연결 및 RowFactory 설정
 │
-├── routes/                      # API 라우트(Controller 계층)
-│   ├── auth_routes.py           # 회원가입, 로그인, JWT 발급
-│   ├── user_routes.py           # 내 정보 조회(/user/me) 등 사용자 관련 API
-│   ├── diet_routes.py           # 다이어트 목표, 체중 변화, 진행률 계산 API
-│   ├── workout_routes.py        # 운동 기록 저장 및 조회 API
-│   ├── schedule_routes.py       # 일정 CRUD 및 캘린더 연동 API
-│   ├── community_routes.py      # 공지사항, 문의, 관리자 문의 답변 API
-│   ├── chatbot_routes.py        # AI 챗봇 대화 API
-│   └── preference_routes.py     # 음식 선호(likes/dislikes/allergies) API
+├── models/                            # DB 접근 로직(Model 계층)
+│   ├── activity_model.py              # users 테이블 CRUD
+│   ├── calorie_model.py               # users 테이블 CRUD
+│   ├── chatbot_model.py               # 챗봇 대화 로그 저장
+│   ├── diet_model.py                  # 체중, 목표, 진행률 데이터 처리
+│   ├── food_model.py                  # 음식 선호 정보 저장/조회
+│   ├── memo_model.py                  # 음식 선호 정보 저장/조회
+│   ├── recommendation_model.py        # 음식 선호 정보 저장/조회
+│   ├── schedule_model.py              # 일정 데이터 DB 처리
+│   ├── settings_model.py              # 일정 데이터 DB 처리
+│   ├── summary_model.py               # 일정 데이터 DB 처리
+│   ├── user_model.py                  # users 테이블 CRUD
+│   └── workout_model.py               # 운동 기록 DB 처리
 │
-├── models/                      # DB 접근 로직(Model 계층)
-│   ├── user_model.py            # users 테이블 CRUD
-│   ├── diet_model.py            # 체중, 목표, 진행률 데이터 처리
-│   ├── workout_model.py         # 운동 기록 DB 처리
-│   ├── food_model.py            # 음식 선호 정보 저장/조회
-│   ├── schedule_model.py        # 일정 데이터 DB 처리
-│   └── chatbot_model.py         # 챗봇 대화 로그 저장
+├── routes/                            # API 라우트(Controller 계층)
+│   ├── activity_routes.py             # 회원가입, 로그인, JWT 발급
+│   ├── ai_engine.py                   # 회원가입, 로그인, JWT 발급
+│   ├── ai_tools.py                    # 회원가입, 로그인, JWT 발급
+│   ├── auth_routes.py                 # 회원가입, 로그인, JWT 발급
+│   ├── calendar_routes.py             # 회원가입, 로그인, JWT 발급
+│   ├── calorie_routes.py              # AI 챗봇 대화 API
+│   ├── chatbot_routes.py              # AI 챗봇 대화 API
+│   ├── community_routes.py            # 공지사항, 문의, 관리자 문의 답변 API
+│   ├── diet_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
+│   ├── memo_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
+│   ├── plan_routes.py                 # 다이어트 목표, 체중 변화, 진행률 계산 API
+│   ├── preference_routes.py           # 음식 선호(likes/dislikes/allergies) API
+│   ├── recommendation_routes.py       # 내 정보 조회(/user/me) 등 사용자 관련 API
+│   ├── schedule_routes.py             # 일정 CRUD 및 캘린더 연동 API
+│   ├── user_routes.py                 # 내 정보 조회(/user/me) 등 사용자 관련 API
+│   ├── weeklytrend_routes.py          # 내 정보 조회(/user/me) 등 사용자 관련 API
+│   └── workout_routes.py              # 운동 기록 저장 및 조회 API
 │
-├── services/                    # 비즈니스 로직 계층
-│   ├── calorie_service.py       # 일일 섭취/소모 칼로리 계산
-│   ├── planning_service.py      # 일정 기반 자동 추천 로직
-│   └── ai_service.py            # 챗봇 프롬프트 및 응답 처리
+├── services/                          # 비즈니스 로직 계층
+│   ├── calorie_service.py             # 일일 섭취/소모 칼로리 계산
+│   ├── planning_service.py            # 일정 기반 자동 추천 로직
+│   ├── progress_service.py            # 일정 기반 자동 추천 로직
+│   ├── recommendation_service.py      # 일정 기반 자동 추천 로직
+│   ├── schedule_service.py            # 일정 기반 자동 추천 로직
+│   └── workout_service.py             # 챗봇 프롬프트 및 응답 처리
 │
-├── utils/
-│   └── validators.py            # 입력값 검증, 타입 변환, 예외 방어 처리
-│
+├── utils/                             # 입력값 검증, 타입 변환, 예외 방어 처리              
+│      
+├── app.py                             # Flask 앱 엔트리 포인트, Blueprint 등록 및 서버 실행
+└── config.py                          # HTML 엔트리 파일
 
 ```
 
