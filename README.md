@@ -158,7 +158,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 
 >주요 파일을 중심으로 구조를 잡고, 나머지는 요약 설명으로 작성했습니다.
 
-### Frontend
+### ※Frontend
 ```
 frontend/                                   # React + Vite 프론트엔드
 ├── src/
@@ -218,7 +218,7 @@ frontend/                                   # React + Vite 프론트엔드
 
 <br>
 
-### Backend
+### ※Backend
 
 ```
 backend/                               # Flask 기반 백엔드 서버
@@ -295,7 +295,9 @@ backend/                               # Flask 기반 백엔드 서버
 ## ⭐ 주요 기능
 >[목차로 돌아가기](#-목차)
 
-문서작업이미지5번삽입
+<br>
+<img width="587" height="331" alt="5 1" src="https://github.com/user-attachments/assets/f8de0358-9a53-4d08-a4b5-2d3875663062" />
+<br>
 
 ### ✅ 회원가입 / 로그인
 - 이메일 및 비밀번호 기반 회원가입
@@ -303,7 +305,9 @@ backend/                               # Flask 기반 백엔드 서버
 - 토큰을 이용한 사용자 인증 유지
 - /api/user/me API를 통해 로그인 상태 복구
 
--이미지-
+<br><br>
+<img width="591" height="332" alt="5 2" src="https://github.com/user-attachments/assets/eadbe8a5-fa41-4e65-8bd8-ebe1cecae21e" />
+<br>
 
 ### 🔐 JWT 인증 구조
 - Access Token 기반 인증
@@ -322,21 +326,27 @@ backend/                               # Flask 기반 백엔드 서버
 - 최근 체중 변화, 식단/운동 선호 및 비선호, 일정 정보, 이전 대화 기록
   <br>등을 종합하여 상황에 맞는 답변을 제공
 
--이미지-
+<br><br>
+<img width="587" height="332" alt="5 5" src="https://github.com/user-attachments/assets/36d41da4-898c-47d3-a571-754f14adeaef" />
+<br>
 
 ### 🥗 식단 & 🏃 운동 추천
 - 사용자의 선호 음식 및 알러지 정보 반영
 - 칼로리 및 단백질 섭취의 하루 결과에 따른 코칭 멘트 자동화
 - 강도별로 운동 추천 및 상세 설명과 제공(유튜브와도 연결)
 
--이미지-
+<br><br>
+<img width="587" height="330" alt="5 6" src="https://github.com/user-attachments/assets/51093ed1-7ebb-491f-84ba-5138e245d7a8" />
+<br>
 
 ### 📅 캘린더 일정 연동
 - 날짜별 식단 및 운동 일정 관리
 - 운동과 소모 칼로리의 정밀한 기록을 위해 일정 메모와도 연동
 - 일정 기반 챗봇 응답 가능
 
--이미지-
+<br><br>
+<img width="587" height="332" alt="5 7" src="https://github.com/user-attachments/assets/caae37ce-a6d2-4f04-8fa4-aded3e588927" />
+<br>
 
 ### 🧩 커뮤니티
 - 관리자의 공지 게시 기능
@@ -347,7 +357,9 @@ backend/                               # Flask 기반 백엔드 서버
 ## 📝 주요 유틸 설명
 >[목차로 돌아가기](#-목차)
 
-문서작업이미지6번삽입
+<br>
+<img width="588" height="332" alt="6" src="https://github.com/user-attachments/assets/a1d6dca3-3dbe-41df-9959-f4d3a903de64" />
+<br>
 
 ### 입력값 안전 처리(실제 서비스 한경을 고려한 안정성 강화)
 - 빈 값, 문자열, 숫자 입력에 대한 방어 처리(500 예방)
@@ -359,7 +371,9 @@ backend/                               # Flask 기반 백엔드 서버
 ## 🛠 트러블 슈팅 경험
 >[목차로 돌아가기](#-목차)
 
-문서작업이미지7번삽입
+<br>
+<img width="587" height="332" alt="7 1" src="https://github.com/user-attachments/assets/f0449299-e02a-483d-a2eb-87f3db4c51e1" />
+<br>
 
 ### ❌ 로그인 성공 후 화면 이동 실패 문제
 - 원인: 인증 로직과 네비게이션이 여러 컴포넌트에 분산되어 있음
@@ -387,4 +401,7 @@ backend/                               # Flask 기반 백엔드 서버
 ## 📌 프로젝트 소감
 >[목차로 돌아가기](#-목차)
 
-이미지 삽입
+<br>
+<img width="587" height="330" alt="10" src="https://github.com/user-attachments/assets/95015cee-576e-4659-9470-dbead26000e1" />
+<br>
+
