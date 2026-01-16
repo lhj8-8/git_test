@@ -296,7 +296,7 @@ backend/                               # Flask 기반 백엔드 서버
 >[목차로 돌아가기](#-목차)
 
 <br>
-<img width="587" height="331" alt="5 1" src="https://github.com/user-attachments/assets/f8de0358-9a53-4d08-a4b5-2d3875663062" />
+<img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/b769441f-bb2e-4bba-bc47-61ed88d64e0a" />
 <br>
 
 ### ✅ 회원가입 / 로그인
@@ -306,7 +306,7 @@ backend/                               # Flask 기반 백엔드 서버
 - /api/user/me API를 통해 로그인 상태 복구
 
 <br><br>
-<img width="591" height="332" alt="5 2" src="https://github.com/user-attachments/assets/eadbe8a5-fa41-4e65-8bd8-ebe1cecae21e" />
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/ff5695c0-1923-4f73-b68a-89a76667e79e" />
 <br>
 
 ### 🔐 JWT 인증 구조
@@ -314,20 +314,24 @@ backend/                               # Flask 기반 백엔드 서버
 - Authorization Header에 Bearer Token 사용
 - 보호된 페이지 접근 시 토큰 검증
 
--이미지-
+<br><br>
+<img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/538b1659-bafd-464a-85b1-665a870fce32" />
+<br>
 
 ### 📊 체중 기록 기반 실제 진행률 계산
 - 현재 체중 및 목표 체중, 달성 기간 등을 입력하면 체중 기록 대비 진행률이 계산됨
 - 시작, 목표, 현재 체중을 기반으로 감량/증량/유지 목표를 모두 지원하는 체중 변화 진행률 계산 로직
 
--이미지-
+<br><br>
+<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/be0c8936-cd37-4a03-9e69-5dfcdf984bf0" />
+<br>
 
-### 🤖 AI 챗봇 (DB Context 기반)
+### 🤖 AI 챗봇
 - 최근 체중 변화, 식단/운동 선호 및 비선호, 일정 정보, 이전 대화 기록
   <br>등을 종합하여 상황에 맞는 답변을 제공
 
 <br><br>
-<img width="587" height="332" alt="5 5" src="https://github.com/user-attachments/assets/36d41da4-898c-47d3-a571-754f14adeaef" />
+<img width="1920" height="1080" alt="13" src="https://github.com/user-attachments/assets/b4d76a36-694c-4d12-9c1b-6250b6b79874" />
 <br>
 
 ### 🥗 식단 & 🏃 운동 추천
@@ -336,7 +340,7 @@ backend/                               # Flask 기반 백엔드 서버
 - 칼로리 및 단백질 섭취의 하루 결과에 따른 코칭 멘트 자동화
 
 <br><br>
-<img width="587" height="330" alt="5 6" src="https://github.com/user-attachments/assets/51093ed1-7ebb-491f-84ba-5138e245d7a8" />
+<img width="1920" height="1080" alt="14" src="https://github.com/user-attachments/assets/662af477-c5ab-42e1-b122-e6495d5ea174" />
 <br>
 
 ### 📅 캘린더 일정 연동
@@ -345,7 +349,7 @@ backend/                               # Flask 기반 백엔드 서버
 - 일정 기반 챗봇 응답 가능
 
 <br><br>
-<img width="587" height="332" alt="5 7" src="https://github.com/user-attachments/assets/caae37ce-a6d2-4f04-8fa4-aded3e588927" />
+<img width="1920" height="1080" alt="15" src="https://github.com/user-attachments/assets/8f446ef7-0e9a-4561-84c2-35e831f8cdda" />
 <br>
 
 ### 🧩 커뮤니티
@@ -358,7 +362,7 @@ backend/                               # Flask 기반 백엔드 서버
 >[목차로 돌아가기](#-목차)
 
 <br>
-<img width="588" height="332" alt="6" src="https://github.com/user-attachments/assets/a1d6dca3-3dbe-41df-9959-f4d3a903de64" />
+<img width="1920" height="1080" alt="16" src="https://github.com/user-attachments/assets/6c554a3f-e56c-4d19-855c-70166dfe5a16" />
 <br>
 
 ### 입력값 안전 처리(실제 서비스 한경을 고려한 안정성 강화)
@@ -372,14 +376,16 @@ backend/                               # Flask 기반 백엔드 서버
 >[목차로 돌아가기](#-목차)
 
 <br>
-<img width="587" height="332" alt="7 1" src="https://github.com/user-attachments/assets/f0449299-e02a-483d-a2eb-87f3db4c51e1" />
+<img width="1920" height="1080" alt="17" src="https://github.com/user-attachments/assets/8ad1a534-7fa7-4f10-9635-6a5b3c289fb4" />
 <br>
 
 ### ❌ 로그인 성공 후 화면 이동 실패 문제
 - 원인: 인증 로직과 네비게이션이 여러 컴포넌트에 분산되어 있음
 - 해결: App.jsx와 RequireLogin 역할 분리
 
--이미지-
+<br><br>
+<img width="1920" height="1080" alt="18" src="https://github.com/user-attachments/assets/90d24999-d975-450d-a5de-ab9d9339170e" />
+<br>
 
 ### ❌ 챗봇 응답 Error 발생 및 부자연스러운 언어 처리
 - 원인: 언어 처리 모델의 순서 및 구조 이상
@@ -390,8 +396,11 @@ backend/                               # Flask 기반 백엔드 서버
 ## 🚀 배포 방법 (Docker)
 >[목차로 돌아가기](#-목차)
 
-문서작업이미지8번삽입
+<br>
+<img width="1920" height="1080" alt="19" src="https://github.com/user-attachments/assets/acc84940-01ae-4ef7-91c9-2f1f26650678" />
+<br>
 
+### 🐋 Docker
 - 환경 의존성 문제 해결
 - 배포 및 실행 단순화
 - 실행시 .env 파일에 사용자의 KEY를 별도로 입력해야 함
@@ -402,6 +411,6 @@ backend/                               # Flask 기반 백엔드 서버
 >[목차로 돌아가기](#-목차)
 
 <br>
-<img width="587" height="330" alt="10" src="https://github.com/user-attachments/assets/95015cee-576e-4659-9470-dbead26000e1" />
+<img width="1920" height="1080" alt="21" src="https://github.com/user-attachments/assets/f8a9852a-4617-428a-b1d3-752996989150" />
 <br>
 
