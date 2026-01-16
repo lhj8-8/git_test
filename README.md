@@ -1,6 +1,6 @@
 # 🥗 Diet Agent  
 AI 기반 개인 맞춤형 다이어트 관리 플랫폼
-<br>(Docker 배포 주소: ddd)
+<br>(Docker 배포 주소: 각자 배포하신 주소 하시면 됩니당)
 <br>(문서 파일: ddd.pdf)
 
 >보안상의 이유로 .env 파일을 제외하여 올렸습니다. 
@@ -27,136 +27,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 
 **Diet Agent**는  
 사용자의 신체 정보, 목표 체중, 목표 기간, 일상 기록 등을 기반으로  
-👉 **식단 · 운동 · 일정 · 진행률 · AI 챗봇 상담 등을 통합 제공하는 다이어트 관리 웹 서비스**입니다.
-
-단순한 추천을 넘어 실제 데이터들을 **DB에 기록하고 시각적으로 관리**하는 것이 핵심 목표입니다.
-
----
-
-## 👤 팀원 소개
->[목차로 돌아가기](#-목차)
-<div align="center">
-
-<table>
-  <tr>
-    <!-- PM / Developer -->
-    <td align="center" width="230" style="vertical-align: top;">
-      <b>김요원 (PM)</b>
-      <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>PM / Developer</b></sub><br>
-      <sub>- 프로젝트 와이어프레임 설계 및 <br>화면 흐름 기획,
-        <br>- DB 테이블·컬럼 공동 구현
-        <br>- JWT 기반 인증 기능 구현 (React–Flask)
-        <br>- 사용자 정보 관리 및 식단 기록 및 <br>저장 기능 구현
-        <br>- AI 챗봇 응답 로직 수정, 기능 공동 구현
-        <br>- 대시보드 주간 추세 시각화
-      </sub><br><br>
-      <a href="https://github.com/kywww">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </a>
-    </td>
- <!-- Developer -->
-    <td align="center" width="230" style="vertical-align: top;">
-      <b>정두균</b>
-      <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>Developer</b></sub><br>
-      <sub>- 프론트엔드 전반 UI/UX 설계 및 구현
-        <br>- React 기반 카드형 콘텐츠, 캘린더, 
-        <br>모달 중심의 인터페이스 구현 
-        <br>- 디자인, 컴포넌트 구조 설계
-        <br>- 사용자 친화적 화면플로우 및 UX 구성
-        <br>- DB 테이블, 컬럼 공동 구현
-        <br>- AI 챗봇 응답 로직 수정 및 <br>기능 공동 구현
-      </sub><br><br>
-      <a href="https://github.com/dooposip">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </a>
-    </td>
-    <!-- Developer -->
-    <td align="center" width="230" style="vertical-align: top;">
-      <b>이혜지</b>
-      <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>Developer</b></sub><br>
-      <sub>- 백엔드(Flask) 전체 디렉토리
-        <br>구조 설계 및 파일 구현
-        <br>- DB 관리 파일(schema_extra.sql, <br>database.py) 구현
-        <br>- 시드데이터 csv 파일 생성
-        <br>- React로 대시보드 초안 구현
-        <br>- 오늘의 코칭 프로그래밍
-        <br>- 문서작업 및 README 작성
-      </sub><br><br>
-      <a href="https://github.com/lhj8-8">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </a>
-    </td>
-    <!-- Developer -->
-    <td align="center" width="230" style="vertical-align: top;">
-      <b>박종훈</b>
-      <div style="width:60%;margin:6px auto;border-bottom:1px solid #aaa;"></div>
-      <sub><b>Developer</b></sub><br>
-      <sub>- 커뮤니티 개발 값 정규화, 
-        <br>금지어, 이상 입력 차단
-        <br>추천 시간 필터 보조
-        <br>- 몇 파일에 뭉쳐있던 것들을 <br>fiexd 기능별 분리
-        <br>- DB성능/ 초기데이터 추가
-      </sub><br><br>
-      <a href="https://github.com/dailyhune">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
-      </a>
-    </td>
-  </tr>
-</table>
-
-</div>
-
-
----
-
-## 🎯 핵심 목표
->[목차로 돌아가기](#-목차)
-
-- 서비스 수준의 **React + Flask 풀스택 구현**
-- **JWT 인증 구조 설계**
-- **DB 중심**의 사용자 상태 관리
-- 사용자의 정보와 **챗봇**, 일정을 연결한 코칭
-- **Docker** 기반 배포 환경 구축
-
----
-
-## 🛠 기술 스택
->[목차로 돌아가기](#-목차)
-
-### Frontend
-- **React (Vite)**
-- React Router DOM
-- Axios
-- CSS 기반 컴포넌트 스타일링
-
-### Backend
-- **Python Flask**
-- Flask Blueprint 구조
-- PyJWT (JWT 인증)
-
-### Database
-- **MySQL**
-- `sqlite3.Row` 기반 딕셔너리 조회
-
-### Authentication
-- **JWT Access Token 방식**
-- LocalStorage 기반 로그인 유지
-- 보호된 라우트 처리 (RequireLogin)
-
-### DevOps / Deployment
-- **Docker**
-- Dockerfile 기반 컨테이너화
-- 환경 독립적 실행 구조
-
----
-
-## 📂 프로젝트 구조
->[목차로 돌아가기](#-목차)
-
->주요 파일을 중심으로 구조를 잡고, 나머지는 요약 설명으로 작성했습니다.
+👉 **식단 · 운동 · 일정 외).
 
 ### ※Frontend
 ```
