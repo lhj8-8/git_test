@@ -1,6 +1,7 @@
 # 🥗 Diet Agent  
 AI 기반 개인 맞춤형 다이어트 관리 플랫폼
-<br>(문서 파일: ddd.pdf)
+<br>- 문서 파일: [Diet_Agent_project.pdf](https://github.com/user-attachments/files/24659427/Diet_Agent_project.pdf)
+
 
 >보안상의 이유로 KEY 있는 .env 파일을 제외하여 올렸습니다. 
 
@@ -47,7 +48,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
         <br>- DB 테이블·컬럼 공동 구현
         <br>- JWT 기반 인증 기능 구현 (React–Flask)
         <br>- 사용자 정보 관리 및 식단 기록 및 <br>저장 기능 구현
-        <br>- AI 챗봇 응답 로직 수정, 기능 공동 구현
+        <br>- AI 챗봇 응답 로직 공동 구현
         <br>- 대시보드 주간 추세 시각화
       </sub><br><br>
       <a href="https://github.com/kywww">
@@ -65,7 +66,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
         <br>- 디자인, 컴포넌트 구조 설계
         <br>- 사용자 친화적 화면플로우 및 UX 구성
         <br>- DB 테이블, 컬럼 공동 구현
-        <br>- AI 챗봇 응답 로직 수정 및 <br>기능 공동 구현
+        <br>- AI 챗봇 응답 로직 공동 구현
       </sub><br><br>
       <a href="https://github.com/dooposip">
         <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white">
@@ -155,7 +156,7 @@ AI 기반 개인 맞춤형 다이어트 관리 플랫폼
 ## 📂 프로젝트 구조
 >[목차로 돌아가기](#-목차)
 
->주요 파일을 중심으로 구조를 잡고, 나머지는 요약 설명으로 작성했습니다.
+>Docker 외 주요 파일을 중심으로 구조를 잡고, 나머지는 요약 설명으로 작성했습니다.
 
 ### ※Frontend
 ```
@@ -331,8 +332,8 @@ backend/                               # Flask 기반 백엔드 서버
 
 ### 🥗 식단 & 🏃 운동 추천
 - 사용자의 선호 음식 및 알러지 정보 반영
-- 칼로리 및 단백질 섭취의 하루 결과에 따른 코칭 멘트 자동화
 - 강도별로 운동 추천 및 상세 설명과 제공(유튜브와도 연결)
+- 칼로리 및 단백질 섭취의 하루 결과에 따른 코칭 멘트 자동화
 
 <br><br>
 <img width="587" height="330" alt="5 6" src="https://github.com/user-attachments/assets/51093ed1-7ebb-491f-84ba-5138e245d7a8" />
@@ -393,7 +394,7 @@ backend/                               # Flask 기반 백엔드 서버
 
 - 환경 의존성 문제 해결
 - 배포 및 실행 단순화
-- 서비스 확장성 확보 의 결과 도출
+- 실행시 .env 파일에 사용자의 KEY를 별도로 입력해야 함
 
 ---
 
